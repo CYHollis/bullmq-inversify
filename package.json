@@ -1,0 +1,44 @@
+{
+  "name": "@auroravpn/bullmq-di",
+  "version": "1.0.0",
+  "description": "",
+  "types": "./dist/bullmq-di.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "index.mjs"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "publish": "npm run build",
+    "build": "npx rollup -c",
+    "test:vitest": "npx vitest run",
+    "test:runtime": "tsx ./__tests__/runtime/bullmq-runtime.test.ts"
+  },
+  "keywords": [],
+  "author": "CYHollis",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@auroravpn/class-metadata": "^1.0.1",
+    "bullmq": "^3.15.0",
+    "inversify": "^7.11.0",
+    "ioredis": "^5.9.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/node": "^25.0.9",
+    "rollup": "^4.55.1",
+    "rollup-plugin-dts": "^6.3.0",
+    "tslib": "^2.8.1",
+    "vitest": "^4.0.17"
+  }
+}
