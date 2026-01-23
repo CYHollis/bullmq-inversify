@@ -3,9 +3,9 @@
 ## 安装
 
 ```bash
-npm install @auroravpn/bullmq-di
-yarn add @auroravpn/bullmq-di
-pnpm add @auroravpn/bullmq-di
+npm install @auroravpn/bullmq-inversify
+yarn add @auroravpn/bullmq-inversify
+pnpm add @auroravpn/bullmq-inversify
 ```
 
 ## 快速开始
