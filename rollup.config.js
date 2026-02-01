@@ -32,6 +32,7 @@ export default defineConfig([
     input: 'src/index.ts',
     output: {
       file: './dist/bullmq-di.d.ts',
+      format: 'es'
     },
     plugins: [dts()]
   }

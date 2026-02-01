@@ -2,6 +2,8 @@
   "name": "@auroravpn/bullmq-inversify",
   "version": "1.0.0",
   "description": "",
+  "main": "./index.js",
+  "module": "./index.mjs",
   "types": "./dist/bullmq-di.d.ts",
   "files": [
     "dist",
@@ -23,7 +25,6 @@
   "keywords": [],
   "author": "CYHollis",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@auroravpn/class-metadata": "^1.0.1",
     "bullmq": "^3.15.0",
